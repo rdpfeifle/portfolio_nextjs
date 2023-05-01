@@ -1,6 +1,6 @@
 export const AboutMe = () => {
   return (
-    <div className="w-full bg-[#FFD15C]">
+    <div className="bg-[#FFD15C]">
       <div className="container">
         <h2 className="py-8 px-0 underlineEffect">About Me</h2>
         <p className="leading-relaxed pb-4">
@@ -16,10 +16,10 @@ export const AboutMe = () => {
         <p className="leading-relaxed pb-4">
           In this land of opportunity, I discovered a world full of diverse
           cultures and inspiring individuals. Although I initially studied
-          marketing in college, my passion for technology always burned within
+          Marketing in college, my passion for technology always burned within
           me. Guided by my childhood tinkering with computers and building
-          projects, I enrolled in a coding bootcamp and became a software
-          engineer.
+          projects, I enrolled in a coding bootcamp and became a Software
+          Engineer.
         </p>
         <p>
           <span className="font-semibold">
