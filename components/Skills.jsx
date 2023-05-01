@@ -56,22 +56,24 @@ export const Skills = () => {
 
   return (
     <div>
-      <h2 className="pb-10 underlineEffect">Technical Skills</h2>
+      <div className="container">
+        <h2 className="pb-10 underlineEffect">Technical Skills</h2>
 
-      <ul className="flex flex-wrap items-center text-center gap-10 max-md:justify-center">
-        {technicalSkills.map((language) => (
-          <li key={language.name}>
-            <Image
-              src={language.icon}
-              alt={`${language.name} icon`}
-              width={80}
-              height={80}
-              className="icon object-cover max-md:w-12 max-md:h-14"
-            />
-            <span className="mt-2">{language.name}</span>
-          </li>
-        ))}
-      </ul>
+        <ul className="flex flex-wrap items-center text-center gap-10 max-md:justify-center">
+          {technicalSkills.map((language) => (
+            <li key={language.name} className="flex flex-col items-center">
+              <Image
+                src={language.icon}
+                alt={`${language.name} icon`}
+                width={80}
+                height={80}
+                className="icon object-cover max-md:w-12 max-md:h-14"
+              />
+              <span className="mt-2">{language.name}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
