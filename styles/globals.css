@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Indigo shades:  
+900- #312E81
+800 - #3730A3
+700 - #4338CA
+600 - #4F46E5
+500 - #6366F1
+400 - #818CF8
+300 - #A5B4FC
+200 - #C7D2FE
+100 - #E0E7FF
+50 - #EEF2FF
+*/
+
 @layer base {
   body {
     @apply bg-gray-100 text-gray-800 tracking-wide lg:mx-40 md:mx-10 max-md:mx-8;
@@ -24,6 +37,10 @@
     @apply text-3xl sm:text-4xl;
   }
 
+  p {
+    @apply text-lg;
+  }
+
   li {
     @apply cursor-pointer;
   }
@@ -31,4 +48,9 @@
   button {
     @apply px-6 py-3 mt-8 text-white text-lg font-semibold bg-indigo-600 rounded-full hover:bg-indigo-700;
   }
+}
+
+.icon {
+  filter: invert(23%) sepia(78%) saturate(4225%) hue-rotate(241deg)
+    brightness(94%) contrast(90%);
 }
