@@ -1,6 +1,6 @@
 export const AboutMe = () => {
   return (
-    <div className="bg-[#FFD15C]">
+    <div className="bg-yellow">
       <div className="container">
         <h2 className="py-8 px-0 underlineEffect">About Me</h2>
         <p className="leading-relaxed pb-4">
