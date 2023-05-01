@@ -9,7 +9,11 @@ module.exports = {
     fontFamily: {
       sans: ["Montserrat", "Helvetica", "Arial", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      colors: {
+        yellow: "#FFD15C",
+      },
+    },
   },
   variants: {},
   plugins: [],
