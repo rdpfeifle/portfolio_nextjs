@@ -54,3 +54,7 @@
   filter: invert(23%) sepia(78%) saturate(4225%) hue-rotate(241deg)
     brightness(94%) contrast(90%);
 }
+
+.underlineEffect {
+  @apply underline decoration-indigo-400 decoration-solid decoration-[6px] underline-offset-4;
+}
