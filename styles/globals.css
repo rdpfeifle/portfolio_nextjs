@@ -59,6 +59,12 @@
     brightness(94%) contrast(90%);
 }
 
+/* Equivalent to gray-800 */
+.social-icons {
+  filter: invert(12%) sepia(20%) saturate(1053%) hue-rotate(175deg)
+    brightness(96%) contrast(90%);
+}
+
 .underlineEffect {
   @apply underline decoration-indigo-400 decoration-solid decoration-[6px] underline-offset-4;
 }
