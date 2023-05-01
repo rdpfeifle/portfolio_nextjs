@@ -42,7 +42,7 @@
   }
 
   p {
-    @apply text-lg;
+    @apply text-lg text-gray-700;
   }
 
   li {
@@ -50,7 +50,7 @@
   }
 
   button {
-    @apply px-6 py-3 mt-8 text-white text-lg font-semibold bg-indigo-600 rounded-full hover:bg-indigo-700;
+    @apply text-white text-lg font-semibold bg-indigo-600 rounded hover:bg-indigo-700;
   }
 }
 
@@ -68,4 +68,14 @@
   .section {
     @apply lg:px-0 md:px-0 px-4;
   }
+}
+
+/* Scale up image on hover */
+.image-scale-up {
+  @apply hover:scale-105 transition-all duration-300;
+}
+
+/* Dim image on hover */
+.image-dim {
+  @apply transition duration-300 ease-in-out hover:brightness-90;
 }
