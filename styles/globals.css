@@ -17,7 +17,11 @@
 
 @layer base {
   body {
-    @apply bg-gray-100 text-gray-800 tracking-wide lg:mx-40 md:mx-10 max-md:mx-8;
+    @apply bg-gray-100 text-gray-800 tracking-wide;
+  }
+
+  .container {
+    @apply lg:px-40 md:px-10 max-md:px-8 mx-auto pb-8;
   }
 
   h1,
@@ -57,4 +61,11 @@
 
 .underlineEffect {
   @apply underline decoration-indigo-400 decoration-solid decoration-[6px] underline-offset-4;
+}
+
+/* Define the components layer */
+@layer components {
+  .section {
+    @apply lg:px-0 md:px-0 px-4;
+  }
 }
