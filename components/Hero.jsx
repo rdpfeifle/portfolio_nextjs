@@ -7,10 +7,10 @@ export const Hero = () => {
         <h2 className="font-light mb-4">
           Hey, I'm <span className="text-indigo-700">Raquel Pfeifle</span>
         </h2>
-        <h1 className="mb-2 text-center">
+        <h1 className="pb-6 text-center">
           A Software Engineer & Shopify Expert
         </h1>
-        <button>Get in touch</button>
+        <button className="rounded-full px-6 py-3">Get in touch</button>
       </div>
       <div className="w-full md:w-1/2 max-md:mt-6 lg:pl-12">
         <Image
