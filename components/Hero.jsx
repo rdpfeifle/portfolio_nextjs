@@ -4,7 +4,9 @@ export const Hero = () => {
   return (
     <div className="container flex flex-col items-center justify-center md:flex-row md:items-center md:justify-between px-8 p-16">
       <div className="flex flex-col items-center text-center md:text-left md:w-1/2">
-        <h2 className="text-2xl font-light mb-4">Hey, I'm Raquel Pfeifle</h2>
+        <h2 className="font-light mb-4">
+          Hey, I'm <span className="text-indigo-700">Raquel Pfeifle</span>
+        </h2>
         <h1 className="mb-2 text-center">
           A Software Engineer & Shopify Expert
         </h1>
