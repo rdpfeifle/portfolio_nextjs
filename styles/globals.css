@@ -42,7 +42,7 @@
   }
 
   p {
-    @apply text-lg text-gray-700;
+    @apply text-lg text-gray-600;
   }
 
   li {
