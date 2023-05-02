@@ -3,7 +3,7 @@ export const Contact = () => {
     <div className="container py-16">
       <div className="flex flex-wrap">
         <div className="w-full md:w-1/2 md:pr-12">
-          <h2 className="pb-10 underlineEffect">Get in touch</h2>
+          <h2 className="pb-10 underlineEffect">Let's have a chat</h2>
           <p className="mb-4">
             Are you interested in{" "}
             <span className="text-indigo-600">
