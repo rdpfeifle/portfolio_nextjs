@@ -10,7 +10,7 @@ export const LinkButton = ({ linkSrc, iconSrc, iconAlt, label }) => {
           alt={iconAlt}
           width={20}
           height={20}
-          className="inline-block iconForBtn"
+          className="inline iconForBtn"
         />{" "}
         {label}
       </button>
