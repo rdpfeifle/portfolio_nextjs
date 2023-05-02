@@ -1,6 +1,6 @@
 export const Contact = () => {
   return (
-    <div className="container mx-auto py-16 px-4">
+    <div className="container py-16">
       <div className="flex flex-wrap">
         <div className="w-full md:w-1/2 md:pr-12">
           <h2 className="pb-10 underlineEffect">Get in touch</h2>
