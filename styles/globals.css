@@ -21,7 +21,7 @@
   }
 
   .container {
-    @apply lg:px-40 md:px-10 max-md:px-8 mx-auto pb-8;
+    @apply lg:px-40 md:px-10 max-md:px-8 mx-auto py-10;
   }
 
   h1,
