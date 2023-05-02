@@ -57,8 +57,7 @@ export const Skills = () => {
   return (
     <div>
       <div className="container">
-        <h2 className="pb-10 underlineEffect">Technical Skills</h2>
-
+        <h2 className="py-10 underlineEffect">Technical Skills</h2>
         <ul className="flex flex-wrap items-center text-center gap-10 max-md:justify-center">
           {technicalSkills.map((language) => (
             <li key={language.name} className="flex flex-col items-center">
