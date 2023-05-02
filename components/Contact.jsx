@@ -1,6 +1,6 @@
 export const Contact = () => {
   return (
-    <div className="container py-16">
+    <section id="contact" className="container py-16">
       <div className="flex flex-wrap">
         <div className="w-full md:w-1/2 md:pr-12">
           <h2 className="pb-10 underlineEffect">Let's have a chat</h2>
@@ -86,6 +86,6 @@ export const Contact = () => {
           </form>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

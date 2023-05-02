@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Footer = () => {
   return (
-    <footer className="bg-yellow py-12">
+    <footer id="footer" className="bg-yellow py-12">
       <div className="container py-0 flex flex-col items-center justify-center">
         <div className="flex space-x-4">
           <Link

@@ -17,7 +17,7 @@ export const WorkWithMe = () => {
   ];
 
   return (
-    <div className="bg-indigo-100">
+    <section id="workWithMe" className="bg-indigo-100">
       <div className="container bg-transparent py-16 text-center">
         <h2 className="capitalize mb-12 underlineEffect">How I can help you</h2>
         <div className="grid gap-8 md:grid-cols-2">
@@ -41,6 +41,6 @@ export const WorkWithMe = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };

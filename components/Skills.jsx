@@ -55,7 +55,7 @@ export const Skills = () => {
   ];
 
   return (
-    <div>
+    <section id="skills">
       <div className="container">
         <h2 className="py-10 underlineEffect">Technical Skills</h2>
         <ul className="flex flex-wrap items-center text-center gap-10 max-md:justify-center">
@@ -73,6 +73,6 @@ export const Skills = () => {
           ))}
         </ul>
       </div>
-    </div>
+    </section>
   );
 };

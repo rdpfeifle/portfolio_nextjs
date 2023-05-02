@@ -1,6 +1,6 @@
 export const AboutMe = () => {
   return (
-    <div className="bg-yellow">
+    <section id="about" className="bg-yellow">
       <div className="container">
         <h2 className="py-8 px-0 underlineEffect">About Me</h2>
         <p className="leading-relaxed pb-4">
@@ -32,6 +32,6 @@ export const AboutMe = () => {
           excitement for the future and the unknown paths it holds.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
