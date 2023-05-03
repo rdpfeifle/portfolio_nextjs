@@ -16,12 +16,16 @@
 */
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-gray-50 text-gray-800 tracking-wide;
   }
 
   .container {
-    @apply lg:px-40 md:px-10 max-md:px-8 mx-auto py-10;
+    @apply lg:px-40 md:px-10 max-md:px-8 mx-auto md:py-28 max-sm:py-12;
   }
 
   h1,
@@ -41,6 +45,10 @@
     @apply text-3xl sm:text-4xl;
   }
 
+  h3 {
+    @apply text-2xl max-sm:text-xl;
+  }
+
   p {
     @apply text-lg text-gray-600;
   }
@@ -54,7 +62,8 @@
   }
 }
 
-.icon {
+.icon,
+.menu-icon-color {
   filter: invert(23%) sepia(78%) saturate(4225%) hue-rotate(241deg)
     brightness(94%) contrast(90%);
 }
@@ -69,6 +78,12 @@
 .iconForBtn {
   filter: invert(100%) sepia(4%) saturate(105%) hue-rotate(27deg)
     brightness(115%) contrast(100%);
+}
+
+/* Yellow icons */
+.yellowIcon {
+  filter: invert(72%) sepia(83%) saturate(315%) hue-rotate(351deg)
+    brightness(101%) contrast(101%);
 }
 
 .underlineEffect {
