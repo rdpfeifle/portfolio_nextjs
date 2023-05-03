@@ -3,38 +3,34 @@ import Image from "next/image";
 
 export const Footer = () => {
   return (
-    <footer id="footer" className="bg-yellow py-12">
+    <footer className="bg-customYellow py-12">
       <div className="container py-0 flex flex-col items-center justify-center">
-        <div className="flex space-x-4">
+        <div className="flex gap-4">
           <Link
             href="https://www.linkedin.com/in/raqueldpfeifle"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span>
-              <Image
-                src="/assets/linkedin.svg"
-                alt="LinkedIn"
-                width={34}
-                height={34}
-                className="transform hover:scale-110 transition-transform duration-300 social-icons"
-              />
-            </span>
+            <Image
+              src="/assets/linkedin.svg"
+              alt="LinkedIn"
+              width={34}
+              height={34}
+              className="transform hover:scale-110 transition-transform duration-300 social-icons"
+            />
           </Link>
           <Link
             href="https://github.com/rdpfeifle"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span>
-              <Image
-                src="/assets/github.svg"
-                alt="Github"
-                width={36}
-                height={36}
-                className="transform hover:scale-110 transition-transform duration-300 social-icons"
-              />
-            </span>
+            <Image
+              src="/assets/github.svg"
+              alt="Github"
+              width={36}
+              height={36}
+              className="transform hover:scale-110 transition-transform duration-300 social-icons"
+            />
           </Link>
         </div>
         <p className="text-sm pt-4">

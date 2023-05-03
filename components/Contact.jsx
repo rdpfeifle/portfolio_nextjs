@@ -1,6 +1,6 @@
 export const Contact = () => {
   return (
-    <section id="contact" className="container py-16">
+    <section id="contact" className="container max-md:py-6">
       <div className="flex flex-wrap">
         <div className="w-full md:w-1/2 md:pr-12">
           <h2 className="pb-10 underlineEffect">Let's have a chat</h2>

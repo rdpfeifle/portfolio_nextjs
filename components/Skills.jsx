@@ -56,7 +56,7 @@ export const Skills = () => {
 
   return (
     <section id="skills">
-      <div className="container">
+      <div className="container pb-16">
         <h2 className="py-10 underlineEffect">Technical Skills</h2>
         <ul className="flex flex-wrap items-center text-center gap-10 max-md:justify-center">
           {technicalSkills.map((language) => (

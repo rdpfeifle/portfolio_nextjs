@@ -18,7 +18,7 @@ export const WorkWithMe = () => {
 
   return (
     <section id="workWithMe" className="bg-indigo-100">
-      <div className="container bg-transparent py-16 text-center">
+      <div className="container bg-transparent text-center">
         <h2 className="capitalize mb-12 underlineEffect">How I can help you</h2>
         <div className="grid gap-8 md:grid-cols-2">
           {cards.map((card) => (
