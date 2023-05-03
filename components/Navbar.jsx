@@ -9,7 +9,20 @@ export const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   }
 
-  const liStyles = `text-gray-800 text-center py-6 md:px-6 border-b-2 md:border-b-0 border-indigo-500 hover:bg-indigo-500 md:hover:text-indigo-600 md:hover:bg-transparent max-md:hover:text-white`;
+  const liStyles = `
+    text-gray-800 
+    text-center 
+    py-6 
+    md:px-6 
+    border-b-2 
+    md:border-b-0 
+    border-indigo-500 
+    hover:bg-indigo-500 
+    md:hover:text-indigo-700 
+    md:hover:bg-transparent 
+    max-md:hover:text-white
+    md:pb-2
+  `;
 
   return (
     <nav className="bg-gray-50 w-full fixed top-0 left-0 right-0 z-10">
