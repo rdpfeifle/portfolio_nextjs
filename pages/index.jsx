@@ -1,13 +1,12 @@
 import Head from "next/head";
-import Image from "next/image";
-// import { Navbar } from "../components/Navbar.jsx";
+import { Navbar } from "../components/Navbar";
 import { Hero } from "../components/Hero.jsx";
-import { Skills } from "../components/Skills.jsx";
 import { AboutMe } from "../components/AboutMe.jsx";
-// import { Portfolio } from "../components/Portfolio.jsx";
-// import { WorkTogether } from "../components/WorkTogether.jsx";
-// import { ContactMe } from "../components/ContactMe.jsx";
-// import { Footer } from "../components/Footer.jsx";
+import { Skills } from "../components/Skills.jsx";
+import { ProjectCard } from "../components/portfolioSection/ProjectCard.jsx";
+import { WorkWithMe } from "../components/WorkWithMe.jsx";
+import { Contact } from "../components/Contact.jsx";
+import { Footer } from "../components/Footer.jsx";
 
 export default function Home() {
   return (
@@ -22,10 +21,59 @@ export default function Home() {
           "
         />
       </Head>
-      {/* <Navbar /> */}
+      <Navbar />
       <Hero />
-      {/* <Skills /> */}
       <AboutMe />
+      <Skills />
+      <section id="portfolio" className="container">
+        <h2 className="underlineEffect pb-6">Projects</h2>
+        <ProjectCard
+          projectName="Tripaholics"
+          technologies={[
+            "Python",
+            "JavaScript",
+            "Bootstrap",
+            "Jinja2",
+            "Flask",
+            "PostgreSQL",
+            "SQLAlchemy",
+            "Twilio's SendGrid API",
+            "Unsplash Images API",
+            "Swiper API",
+            "Google Maps API",
+          ]}
+          description="Description of what was done with the project. Lorem ipsum dolor sit amet consectetur adipisicing elit. In itaque sequi natus cupiditate voluptates quas voluptatibus temporibus, incidunt, perspiciatis, corrupti unde? Sit distinctio veritatis eaque quae dolor velit alias reprehenderit?"
+          caseStudyLink="https://"
+          demoLink="https://www.youtube.com/watch?v=c5srainYwKA"
+          codeLink="https://github.com/rdpfeifle/Travel-web-app"
+          imageSrc="/assets/images/coming-soon.png"
+          imageAlt="Tripaholics Mockup Image"
+        />
+        <ProjectCard
+          projectName="Portfolio Website"
+          technologies={["Next.js", "React", "Tailwind CSS"]}
+          description="Description of what was done with the project. Lorem ipsum dolor sit amet consectetur adipisicing elit. In itaque sequi natus cupiditate voluptates quas voluptatibus temporibus, incidunt, perspiciatis, corrupti unde? Sit distinctio veritatis eaque quae dolor velit alias reprehenderit?"
+          caseStudyLink="https://"
+          demoLink="https://"
+          codeLink="https://github.com/rdpfeifle/portfolio_nextjs"
+          imageSrc="/assets/images/coming-soon.png"
+          imageAlt="Portfolio Mockup Image"
+        />
+        <ProjectCard
+          projectName="E-commerce"
+          technologies={["Next.js", "React", "TypeScript", "Tailwind CSS"]}
+          description="Description of what was done with the project. Lorem ipsum dolor sit amet consectetur adipisicing elit. In itaque sequi natus cupiditate voluptates quas voluptatibus temporibus, incidunt, perspiciatis, corrupti unde? Sit distinctio veritatis eaque quae dolor velit alias reprehenderit?"
+          caseStudyLink="https://"
+          // demoLink="https://"
+          codeLink="https://"
+          liveLink="https://"
+          imageSrc="/assets/images/coming-soon.png"
+          imageAlt="Project Mockup Image"
+        />
+      </section>
+      <WorkWithMe />
+      <Contact />
+      <Footer />
     </>
   );
 }
