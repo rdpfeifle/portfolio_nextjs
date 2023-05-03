@@ -1,19 +1,64 @@
 import Image from "next/image";
+import Link from "next/link";
+import Typewriter from "typewriter-effect";
 
 export const Hero = () => {
   return (
     <section
       id="hero"
-      className="container flex flex-col items-center justify-center md:flex-row md:items-center md:justify-between px-8 p-16"
+      className="container flex flex-col items-center mt-16 justify-center md:flex-row md:items-center md:justify-between py-16"
     >
-      <div className="flex flex-col items-center text-center md:text-left md:w-1/2">
+      <div className="flex flex-col items-center text-center md:w-1/2">
         <h2 className="font-light mb-4">
           Hey, I'm <span className="text-indigo-700">Raquel Pfeifle</span>
         </h2>
-        <h1 className="pb-6 text-center">
-          A Software Engineer & Shopify Expert
+        <h1 className="pb-6">
+          {" "}
+          <Typewriter
+            options={{
+              strings: ["Software Engineer", "Shopify Developer"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
         </h1>
-        <button className="rounded-full px-6 py-3">Get in touch</button>
+        <p className="pb-6">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eaque
+          asperiores necessitatibus rerum. Molestiae officiis qui ipsam
+          distinctio aut, sunt dolorem veniam. Nisi, eligendi expedita. Quo
+          obcaecati odit tempore ea!
+        </p>
+        <Link href="#contact">
+          <button className="rounded-full px-6 py-3">Get in touch</button>
+        </Link>
+        <div className="mt-6 flex gap-4">
+          <Link
+            href="https://www.linkedin.com/in/raqueldpfeifle"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/assets/linkedin.svg"
+              alt="LinkedIn"
+              width={34}
+              height={34}
+              className="transform hover:scale-110 transition-transform duration-300 social-icons"
+            />
+          </Link>
+          <Link
+            href="https://github.com/rdpfeifle"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/assets/github.svg"
+              alt="Github"
+              width={36}
+              height={36}
+              className="transform hover:scale-110 transition-transform duration-300  social-icons"
+            />
+          </Link>
+        </div>
       </div>
       <div className="w-full md:w-1/2 max-md:mt-6 lg:pl-12">
         <Image
