@@ -64,13 +64,15 @@ export const ProjectCard = ({
         </div>
       </div>
       <div className="md:w-1/2 pb-12 max-md:pt-8">
-        <Image
-          src={imageSrc}
-          alt={imageAlt}
-          width={500}
-          height={300}
-          className="image-scale-up"
-        />
+        <Link href={caseStudyLink}>
+          <Image
+            src={imageSrc}
+            alt={imageAlt}
+            width={500}
+            height={300}
+            className="image-scale-up"
+          />
+        </Link>
       </div>
     </div>
   );
