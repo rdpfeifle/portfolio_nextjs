@@ -42,7 +42,7 @@ export const Navbar = () => {
           {/* Hamburger button */}
           <div className="md:hidden">
             <button
-              className="p-2 text-gray-700 rounded-md  focus:border-gray-400 bg-transparent hover:bg-transparent"
+              className="p-2 text-gray-700 rounded-md bg-transparent hover:bg-transparent"
               onClick={handleMenuClick}
             >
               {" "}
@@ -74,27 +74,27 @@ export const Navbar = () => {
         >
           <ul className="h-screen md:h-auto items-center justify-center md:flex">
             <li className={liStyles}>
-              <Link href="#about" onClick={handleMenuClick}>
+              <Link href="/#about" onClick={handleMenuClick}>
                 About
               </Link>
             </li>
             <li className={liStyles}>
-              <Link href="#skills" onClick={handleMenuClick}>
+              <Link href="/#skills" onClick={handleMenuClick}>
                 Skills
               </Link>
             </li>
             <li className={liStyles}>
-              <Link href="#portfolio" onClick={handleMenuClick}>
+              <Link href="/#portfolio" onClick={handleMenuClick}>
                 Portfolio
               </Link>
             </li>
             <li className={liStyles}>
-              <Link href="#workWithMe" onClick={handleMenuClick}>
+              <Link href="/#workWithMe" onClick={handleMenuClick}>
                 Work With Me
               </Link>
             </li>
             <li className={liStyles}>
-              <Link href="#contact" onClick={handleMenuClick}>
+              <Link href="/#contact" onClick={handleMenuClick}>
                 Contact
               </Link>
             </li>
