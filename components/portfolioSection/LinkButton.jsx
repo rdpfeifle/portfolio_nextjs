@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const LinkButton = ({ linkSrc, iconSrc, iconAlt, label }) => {
   return (
-    <Link href={linkSrc} target="_blank" rel="noopener noreferrer">
+    <Link href={linkSrc}>
       <button className="px-6 py-2">
         <Image
           src={iconSrc}
