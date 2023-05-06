@@ -58,7 +58,7 @@ export const ProjectCard = ({
             <LinkButton
               linkSrc={liveLink}
               iconSrc="/assets/link-solid.svg"
-              alt="Link icon"
+              iconAlt="Link icon"
               label="Live"
             />
           )}
@@ -69,9 +69,9 @@ export const ProjectCard = ({
           <Image
             src={imageSrc}
             alt={imageAlt}
-            width={500}
-            height={300}
-            className="image-scale-up"
+            width={600}
+            height={500}
+            className="image-scale-up hover:shadow-xl"
           />
         </Link>
       </div>
