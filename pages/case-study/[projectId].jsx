@@ -7,18 +7,17 @@ export default function ProjectPage({ project }) {
   const {
     projectName,
     shortDefinition,
-    type,
     stack,
     live,
     image,
-    projectOverview,
+    objectives,
     technicalOverview,
-    thoughtProcess,
+    challengesAndSolutions,
     futureChanges,
     results,
   } = project;
 
-  const content = `${projectName} ${shortDefinition} ${type} ${stack} ${projectOverview.title} ${projectOverview.description} ${technicalOverview.title} ${technicalOverview.description} ${thoughtProcess.title} ${thoughtProcess.description} ${futureChanges.title} ${futureChanges.description} ${results.title} ${results.description}`;
+  const content = `${projectName} ${shortDefinition} ${stack} ${objectives.title} ${objectives.description} ${technicalOverview.title} ${technicalOverview.description} ${challengesAndSolutions.title} ${challengesAndSolutions.description} ${futureChanges.title} ${futureChanges.description} ${results.title} ${results.description}`;
 
   const readTime = calculateReadTime(content);
 
@@ -29,46 +28,40 @@ export default function ProjectPage({ project }) {
       <h2>{projectName}</h2>
       <p>{readTime} minute read</p>
       <p>{shortDefinition}</p>
-      <div className="flex flex-col sm:flex-row sm:justify-start sm:items-stretch sm:flex-wrap pb-6">
-        <div className={responsiveDiv}>
-          <h3>Type</h3>
-          <p>{type}</p>
-        </div>
-        <div className={responsiveDiv}>
-          <h3>Tech Stack</h3>
-          <p>{stack}</p>
-        </div>
-        {live && (
-          <div className={responsiveDiv}>
-            <h3>Live</h3>
-            <Link href={live}>
-              <button className="px-5 py-3">
-                <Image
-                  src="/assets/link-solid.svg"
-                  alt="Link icon"
-                  width={20}
-                  height={20}
-                  className="inline iconForBtn"
-                />{" "}
-                See live
-              </button>
-            </Link>
-          </div>
-        )}
+      <div className={responsiveDiv}>
+        <h3>Tech Stack</h3>
+        <p>{stack}</p>
       </div>
+      {live && (
+        <div className={responsiveDiv}>
+          <h3>Live</h3>
+          <Link href={live}>
+            <button className="px-5 py-3">
+              <Image
+                src="/assets/link-solid.svg"
+                alt="Link icon"
+                width={20}
+                height={20}
+                className="inline iconForBtn"
+              />{" "}
+              See live
+            </button>
+          </Link>
+        </div>
+      )}
       <Image
         src={image}
         alt={projectName}
-        width={950}
-        height={300}
+        width={450}
+        height={450}
         className="rounded"
       />
-      <h2 className="pt-10 pb-4">{projectOverview.title}</h2>
-      <p className="mb-10">{projectOverview.description}</p>
+      <h2 className="pt-10 pb-4">{objectives.title}</h2>
+      <p className="mb-10">{objectives.description}</p>
+      <h2 className="pb-4">{challengesAndSolutions.title}</h2>
+      <p className="mb-10">{challengesAndSolutions.description}</p>
       <h2 className="pb-4">{technicalOverview.title}</h2>
       <p className="mb-10">{technicalOverview.description}</p>
-      <h2 className="pb-4">{thoughtProcess.title}</h2>
-      <p className="mb-10">{thoughtProcess.description}</p>
       <h2 className="pb-4">{futureChanges.title}</h2>
       <p className="mb-10">{futureChanges.description}</p>
       <h2 className="pb-4">{results.title}</h2>
