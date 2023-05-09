@@ -22,6 +22,10 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Disclaimer
+
+The design and layout of the case study pages and the homepage (portfolio section) in this project were inspired by [aaspinwall.com](https://aaspinwall.com), with different content and code implementation. While the design elements and layout draw inspiration from aaspinwall.com, the actual content and code used in this project are unique and original. However, I would like to acknowledge the inspiration taken from their website.
+
 ## License
 
 © 2023 Raquel Dias Pfeifle. All Rights Reserved. This project is licensed under the [MIT License](LICENSE.md).
