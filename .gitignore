@@ -30,4 +30,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+
 sendgrid.env
+
+.vscode/
