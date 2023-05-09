@@ -65,15 +65,25 @@ export const ProjectCard = ({
         </div>
       </div>
       <div className="md:w-1/2 pb-12 max-md:pt-8">
-        <Link href={caseStudyLink}>
+        {caseStudyLink ? (
+          <Link href={caseStudyLink}>
+            <Image
+              src={imageSrc}
+              alt={imageAlt}
+              width={600}
+              height={500}
+              className="image-scale-up hover:shadow-xl rounded"
+            />
+          </Link>
+        ) : (
           <Image
             src={imageSrc}
             alt={imageAlt}
             width={600}
             height={500}
-            className="image-scale-up hover:shadow-xl"
+            className="image-scale-up hover:shadow-xl rounded"
           />
-        </Link>
+        )}
       </div>
     </div>
   );
