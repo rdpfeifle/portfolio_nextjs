@@ -12,7 +12,7 @@ export const Hero = () => {
         <h2 className="font-light mb-4">
           Hey, I'm <span className="text-indigo-700">Raquel Pfeifle</span>
         </h2>
-        <h1 className="pb-6">
+        <h1 className="mb-8">
           {" "}
           <Typewriter
             options={{
@@ -22,12 +22,9 @@ export const Hero = () => {
             }}
           />
         </h1>
-        <p className="pb-6">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eaque
-          asperiores necessitatibus rerum. Molestiae officiis qui ipsam
-          distinctio aut, sunt dolorem veniam. Nisi, eligendi expedita. Quo
-          obcaecati odit tempore ea!
-        </p>
+        {/* <p className="pb-6 tracking-widest capitalize font-light text-2xl">
+          Lorem ipsum
+        </p> */}
         <Link href="#contact">
           <button className="rounded-full px-6 py-3">Get in touch</button>
         </Link>
@@ -55,7 +52,7 @@ export const Hero = () => {
               alt="Github"
               width={36}
               height={36}
-              className="transform hover:scale-110 transition-transform duration-300  social-icons"
+              className="transform hover:scale-110 transition-transform duration-300 social-icons"
             />
           </Link>
         </div>
