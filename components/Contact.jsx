@@ -78,7 +78,7 @@ export const Contact = () => {
     <section id="contact" className="container max-md:py-6">
       <div className="flex flex-wrap">
         <div className="w-full md:w-1/2 md:pr-12">
-          <h2 className="pb-10 underlineEffect">Let&apos;s have a chat</h2>
+          <h2 className="pb-10 underlineEffect">Get in touch</h2>
           <p className="mb-4">
             Are you interested in{" "}
             <span className="text-indigo-600">
@@ -160,7 +160,7 @@ export const Contact = () => {
             </div>
             <button
               type="submit"
-              className="bg-indigo-600 hover:bg-indigo-700 text-white semi-bold py-2 px-6 rounded-lg"
+              className="bg-indigo-600 hover:bg-indigo-700 mt-5 text-white semi-bold py-2 px-6 rounded-lg"
             >
               Submit
             </button>
