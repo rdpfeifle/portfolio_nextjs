@@ -6,7 +6,6 @@ import { Skills } from "../components/Skills.jsx";
 import { ProjectCard } from "../components/portfolioSection/ProjectCard.jsx";
 import { WorkWithMe } from "../components/WorkWithMe.jsx";
 import { Contact } from "../components/Contact.jsx";
-import { Footer } from "../components/Footer.jsx";
 
 export default function Home() {
   return (
@@ -21,7 +20,6 @@ export default function Home() {
           "
         />
       </Head>
-      <Navbar />
       <Hero />
       <AboutMe />
       <Skills />
@@ -42,38 +40,36 @@ export default function Home() {
             "Swiper API",
             "Google Maps API",
           ]}
-          description="Description of what was done with the project. Lorem ipsum dolor sit amet consectetur adipisicing elit. In itaque sequi natus cupiditate voluptates quas voluptatibus temporibus, incidunt, perspiciatis, corrupti unde? Sit distinctio veritatis eaque quae dolor velit alias reprehenderit?"
-          caseStudyLink="https://"
+          description="Tripaholics is a full-stack travel web application that was developed in just 4 weeks. It is built using Python, Flask, and JavaScript, providing a complete solution for managing trips. The application includes features such as user account management, creating, editing, and deleting trips."
+          // caseStudyLink="/case-study/tripaholics"
           demoLink="https://www.youtube.com/watch?v=c5srainYwKA"
           codeLink="https://github.com/rdpfeifle/Travel-web-app"
-          imageSrc="/assets/images/coming-soon.png"
+          imageSrc="/assets/images/tripaholics-mockup.png"
           imageAlt="Tripaholics Mockup Image"
         />
         <ProjectCard
           projectName="Portfolio Website"
           technologies={["Next.js", "React", "Tailwind CSS"]}
-          description="Description of what was done with the project. Lorem ipsum dolor sit amet consectetur adipisicing elit. In itaque sequi natus cupiditate voluptates quas voluptatibus temporibus, incidunt, perspiciatis, corrupti unde? Sit distinctio veritatis eaque quae dolor velit alias reprehenderit?"
-          caseStudyLink="https://"
+          description="My personal portfolio is built using Next.js/React.js and Tailwind CSS, creating a visually appealing and responsive website. I incorporated the interactive Typewriter Effect library and integrated SendGrid Mail API to allow visitors to submit the contact form."
+          caseStudyLink="/case-study/portfolio-website"
           demoLink="https://"
           codeLink="https://github.com/rdpfeifle/portfolio_nextjs"
-          imageSrc="/assets/images/coming-soon.png"
+          imageSrc="/assets/images/portfolio-mockup.png"
           imageAlt="Portfolio Mockup Image"
         />
         <ProjectCard
-          projectName="E-commerce"
-          technologies={["Next.js", "React", "TypeScript", "Tailwind CSS"]}
-          description="Description of what was done with the project. Lorem ipsum dolor sit amet consectetur adipisicing elit. In itaque sequi natus cupiditate voluptates quas voluptatibus temporibus, incidunt, perspiciatis, corrupti unde? Sit distinctio veritatis eaque quae dolor velit alias reprehenderit?"
-          caseStudyLink="https://"
-          // demoLink="https://"
-          codeLink="https://"
-          liveLink="https://"
-          imageSrc="/assets/images/coming-soon.png"
-          imageAlt="Project Mockup Image"
+          projectName="Alloy Fashion"
+          technologies={["Shopify Liquid"]}
+          description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid doloribus perferendis minima quae cupiditate doloremque sunt dolore obcaecati deserunt blanditiis hic maxime, natus a tenetur ducimus soluta, commodi est illo?"
+          caseStudyLink="/case-study/alloy-ecommerce"
+          demoLink="https://"
+          // codeLink="https://github.com/rdpfeifle/portfolio_nextjs"
+          imageSrc="/assets/images/alloy-mockup.png"
+          imageAlt="Alloy Store Mockup Image"
         />
       </section>
       <WorkWithMe />
       <Contact />
-      <Footer />
     </>
   );
 }
