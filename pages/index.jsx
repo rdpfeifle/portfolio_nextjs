@@ -60,7 +60,7 @@ export default function Home() {
         <ProjectCard
           projectName="Alloy Fashion"
           technologies={["Shopify Liquid"]}
-          description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid doloribus perferendis minima quae cupiditate doloremque sunt dolore obcaecati deserunt blanditiis hic maxime, natus a tenetur ducimus soluta, commodi est illo?"
+          description="Alloy Fashion, powered by Shopify, offers a complete e-commerce solution with a user-friendly product page, convenient cart functionality, and a newsletter feature. Additionally, it has an easy navigation and secure payment processing."
           caseStudyLink="/case-study/alloy-ecommerce"
           demoLink="https://"
           // codeLink="https://github.com/rdpfeifle/portfolio_nextjs"
