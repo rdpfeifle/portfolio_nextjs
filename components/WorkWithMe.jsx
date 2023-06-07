@@ -3,13 +3,13 @@ import Image from "next/image";
 export const WorkWithMe = () => {
   const cards = [
     {
-      title: "Service 1",
+      title: "E-COMMERCE",
       description:
-        "This is the first card. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam, metus id ornare euismod, nisi mauris commodo ex, sit amet semper sapien quam in dolor.",
+        "This is the second card. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam, metus id ornare euismod, nisi mauris commodo ex, sit amet semper sapien quam in dolor.",
       imageSrc: "/assets/images/coming-soon.png",
     },
     {
-      title: "Service 2",
+      title: "WEB DESIGN",
       description:
         "This is the second card. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam, metus id ornare euismod, nisi mauris commodo ex, sit amet semper sapien quam in dolor.",
       imageSrc: "/assets/images/coming-soon.png",
