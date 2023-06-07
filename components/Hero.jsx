@@ -10,13 +10,18 @@ export const Hero = () => {
     >
       <div className="flex flex-col items-center text-center md:w-1/2">
         <h2 className="font-light mb-4">
-          Hey, I'm <span className="text-indigo-700">Raquel Pfeifle</span>
+          Hey, I&apos;m <span className="text-indigo-700">Raquel Pfeifle</span>
         </h2>
         <h1 className="mb-8">
           {" "}
           <Typewriter
             options={{
-              strings: ["Software Engineer", "Shopify Developer"],
+              strings: [
+                "Software Engineer",
+                "Shopify Developer",
+                "Frontend Developer",
+                "Web Developer",
+              ],
               autoStart: true,
               loop: true,
             }}
