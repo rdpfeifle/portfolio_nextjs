@@ -70,8 +70,9 @@ export const ProjectCard = ({
             <Image
               src={imageSrc}
               alt={imageAlt}
-              width={600}
-              height={500}
+              width={1200}
+              height={800}
+              quality={90}
               className="image-scale-up hover:shadow-xl rounded"
             />
           </Link>
@@ -79,8 +80,9 @@ export const ProjectCard = ({
           <Image
             src={imageSrc}
             alt={imageAlt}
-            width={600}
-            height={500}
+            width={1200}
+            height={800}
+            quality={90}
             className="image-scale-up hover:shadow-xl rounded"
           />
         )}
