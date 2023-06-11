@@ -48,7 +48,7 @@ export default function Home() {
         />
         <ProjectCard
           projectName="Portfolio Website"
-          technologies={["Next.js", "React", "Tailwind CSS"]}
+          technologies={["Next.js", "React", "Tailwind CSS", "AWS Amplify"]}
           description="My personal portfolio is built using Next.js/React.js and Tailwind CSS, creating a visually appealing and responsive website. I incorporated the interactive Typewriter Effect library and integrated SendGrid Mail API to allow visitors to submit the contact form."
           // caseStudyLink="/case-study/portfolio-website"
           // demoLink="https://"
