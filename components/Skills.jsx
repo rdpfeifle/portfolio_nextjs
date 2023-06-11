@@ -59,15 +59,15 @@ export const Skills = () => {
     <section id="skills">
       <div className="container pb-16">
         <h2 className="py-10 underlineEffect">Technical Skills</h2>
-        <ul className="flex flex-wrap items-center justify-start gap-10 max-md:justify-center">
+        <ul className="flex flex-wrap justify-start gap-10 max-md:justify-center">
           {technicalSkills.map((language) => (
             <li key={language.name} className="flex flex-col items-center">
               <Image
                 src={language.icon}
                 alt={`${language.name} icon`}
-                width={100}
-                height={100}
-                className="icon object-contain w-16 h-16 max-md:w-12 max-md:h-12"
+                width={120} // Adjust the width value
+                height={120} // Adjust the height value
+                className="icon object-contain w-20 h-20 max-md:w-12 max-md:h-12"
               />
               <span className="mt-2">{language.name}</span>
             </li>
