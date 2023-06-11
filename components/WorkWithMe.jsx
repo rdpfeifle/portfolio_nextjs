@@ -5,13 +5,13 @@ export const WorkWithMe = () => {
     {
       title: "E-COMMERCE",
       description:
-        "This is the second card. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam, metus id ornare euismod, nisi mauris commodo ex, sit amet semper sapien quam in dolor.",
+        "I am dedicated to helping businesses thrive in the digital age through responsive and conversion-driven Shopify development. I strive to create impactful Shopify stores that drive results and contribute to your success.",
       imageSrc: "/assets/images/alloy-homepage.png",
     },
     {
       title: "WEB DESIGN",
       description:
-        "This is the second card. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam, metus id ornare euismod, nisi mauris commodo ex, sit amet semper sapien quam in dolor.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam, metus id ornare euismod, nisi mauris commodo ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       imageSrc: "/assets/images/coming-soon.png",
     },
   ];
