@@ -52,6 +52,7 @@ export const Skills = () => {
     { name: "Git", icon: "/assets/git.svg" },
     { name: "Github", icon: "/assets/github.svg" },
     { name: "AWS", icon: "/assets/aws.svg" },
+    { name: "Wordpress", icon: "/assets/wordpress.svg" },
   ];
 
   return (
