@@ -6,7 +6,7 @@ export const WorkWithMe = () => {
       title: "E-COMMERCE",
       description:
         "This is the second card. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam, metus id ornare euismod, nisi mauris commodo ex, sit amet semper sapien quam in dolor.",
-      imageSrc: "/assets/images/coming-soon.png",
+      imageSrc: "/assets/images/alloy-homepage.png",
     },
     {
       title: "WEB DESIGN",
@@ -27,8 +27,9 @@ export const WorkWithMe = () => {
                 <Image
                   src={card.imageSrc}
                   alt={card.title}
-                  width={332}
-                  height={310}
+                  width={1200}
+                  height={800}
+                  quality={100}
                   className="object-cover w-full h-full rounded-lg image-dim"
                 />
               </div>
