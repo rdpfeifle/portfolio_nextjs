@@ -11,6 +11,9 @@ export default function ProjectPage({ project }) {
     stack,
     live,
     image,
+    mockupImg1,
+    mockupImg2,
+    mockupImg3,
     objectives,
     technicalOverview,
     challengesAndSolutions,
@@ -32,7 +35,7 @@ export default function ProjectPage({ project }) {
       </Head>
       <section className="container max-md:mt-12">
         <h2>{projectName}</h2>
-        <p>{readTime} minute read</p>
+        <p className="mb-2">{readTime} minute read</p>
         <p>{shortDefinition}</p>
         <div className={responsiveDiv}>
           <h3>Tech Stack</h3>
@@ -58,20 +61,67 @@ export default function ProjectPage({ project }) {
         <Image
           src={image}
           alt={projectName}
-          width={450}
+          width={750}
           height={450}
-          className="rounded"
+          quality={90}
+          className="rounded mt-6"
         />
+        {/* Mockup images */}
+        {mockupImg1 && (
+          <Image
+            src={mockupImg1}
+            alt={projectName}
+            width={900}
+            height={600}
+            quality={100}
+            className="mt-6"
+          />
+        )}
         <h2 className="pt-10 pb-4">{objectives.title}</h2>
         <p className="mb-10">{objectives.description}</p>
+        {mockupImg2 && (
+          <Image
+            src={mockupImg2}
+            alt={projectName}
+            width={900}
+            height={600}
+            quality={100}
+          />
+        )}
+        {mockupImg3 && (
+          <Image
+            src={mockupImg3}
+            alt={projectName}
+            width={900}
+            height={600}
+            quality={100}
+            className="mt-6"
+          />
+        )}
         <h2 className="pb-4">{challengesAndSolutions.title}</h2>
-        <p className="mb-10">{challengesAndSolutions.description}</p>
-        <h2 className="pb-4">{technicalOverview.title}</h2>
-        <p className="mb-10">{technicalOverview.description}</p>
-        <h2 className="pb-4">{futureChanges.title}</h2>
-        <p className="mb-10">{futureChanges.description}</p>
-        <h2 className="pb-4">{results.title}</h2>
-        <p>{results.description}</p>{" "}
+        <div className="mb-6">
+          {challengesAndSolutions.description.length > 1 ? (
+            challengesAndSolutions.description.map((paragraph, index) => (
+              <p className="pb-4" key={index}>
+                {paragraph}
+              </p>
+            ))
+          ) : (
+            <p>{challengesAndSolutions.description[0]}</p>
+          )}
+        </div>
+        <div className="mb-10">
+          <h2 className="pb-4">{technicalOverview.title}</h2>
+          <p>{technicalOverview.description}</p>
+        </div>
+        <div className="mb-10">
+          <h2 className="pb-4">{futureChanges.title}</h2>
+          <p>{futureChanges.description}</p>
+        </div>
+        <div className="mb-10">
+          <h2 className="pb-4">{results.title}</h2>
+          <p>{results.description}</p>{" "}
+        </div>
       </section>
     </>
   );
