@@ -14,7 +14,7 @@ export const ProjectCard = ({
   imageAlt,
 }) => {
   return (
-    <div className="flex flex-col items-center md:gap-14 md:flex-row md:pb-12">
+    <div className="flex flex-col items-center md:gap-14 md:flex-row md:mb-6 max-md:mb-8">
       <div className="md:w-1/2">
         <h3 className="font-semibold mb-3 uppercase">{projectName}</h3>
         <div className="flex flex-wrap gap-2 mb-4">
