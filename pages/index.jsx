@@ -53,8 +53,9 @@ export default function Home() {
           projectName="Portfolio Website"
           technologies={[
             "Next.js",
-            "React",
+            "React.js",
             "Tailwind CSS",
+            "Node.js",
             "AWS Amplify",
             "Route 53",
             "Twilio's SendGrid Mail API",
