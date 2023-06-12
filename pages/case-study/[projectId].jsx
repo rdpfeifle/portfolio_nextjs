@@ -35,8 +35,8 @@ export default function ProjectPage({ project }) {
       </Head>
       <section className="container max-md:mt-12">
         <h2>{projectName}</h2>
-        <p className="mb-2">{readTime} minute read</p>
-        <p>{shortDefinition}</p>
+        <p className="mt-2">{readTime} minute read</p>
+        <p className="my-3">{shortDefinition}</p>
         <div className={responsiveDiv}>
           <h3>Tech Stack</h3>
           <p>{stack}</p>
