@@ -27,7 +27,7 @@ export const ProjectCard = ({
             </div>
           ))}
         </div>
-        <p className="text-lg mb-4">{description}</p>
+        <p className="mb-4">{description}</p>
         <div className="flex flex-wrap gap-2 max-md:justify-center">
           {/* In this case, the use of the && condition is necessary to ensure that the LinkButton is only rendered when the corresponding link exists. Without this condition, I would have to manually check the existence of each link, which can be difficult and may cause bugs. By using the && condition, I can avoid potential errors that may arise if a link is missing, and simplify my code. */}
           {caseStudyLink && (
