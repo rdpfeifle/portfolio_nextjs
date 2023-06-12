@@ -146,7 +146,7 @@ export const Contact = () => {
                 required
               />
             </div>
-            <div className="mb-8">
+            <div>
               <textarea
                 id="message"
                 name="message"
