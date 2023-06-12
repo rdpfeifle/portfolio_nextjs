@@ -62,7 +62,10 @@ export const Skills = () => {
         <h2 className="py-10 underlineEffect">Technical Skills</h2>
         <ul className="flex flex-wrap justify-start gap-10 max-md:justify-center">
           {technicalSkills.map((language) => (
-            <li key={language.name} className="flex flex-col items-center">
+            <li
+              key={language.name}
+              className="flex flex-col items-center cursor-auto"
+            >
               <Image
                 src={language.icon}
                 alt={`${language.name} icon`}
