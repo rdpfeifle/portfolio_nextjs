@@ -38,19 +38,19 @@
   }
 
   h1 {
-    @apply text-4xl sm:text-5xl;
+    @apply text-4xl max-md:text-3xl;
   }
 
   h2 {
-    @apply text-3xl sm:text-4xl;
+    @apply text-3xl max-md:text-2xl;
   }
 
   h3 {
-    @apply text-2xl max-sm:text-xl;
+    @apply text-2xl max-md:text-xl;
   }
 
   p {
-    @apply text-lg text-gray-600;
+    @apply text-lg text-gray-600 max-md:text-base;
   }
 
   li {
