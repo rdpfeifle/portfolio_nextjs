@@ -70,6 +70,8 @@ export default function Home() {
         <ProjectCard
           projectName="Alloy Fashion"
           technologies={[
+            "Shopify Store Setup",
+            "Theme Customization",
             "Shopify Liquid",
             "CSS",
             "SSL Encrypted",
