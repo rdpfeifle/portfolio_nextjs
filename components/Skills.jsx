@@ -69,8 +69,8 @@ export const Skills = () => {
               <Image
                 src={language.icon}
                 alt={`${language.name} icon`}
-                width={120} // Adjust the width value
-                height={120} // Adjust the height value
+                width={120}
+                height={120}
                 className="icon object-contain w-20 h-20 max-md:w-12 max-md:h-12"
               />
               <span className="mt-2">{language.name}</span>

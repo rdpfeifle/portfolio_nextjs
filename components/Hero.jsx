@@ -27,9 +27,6 @@ export const Hero = () => {
             }}
           />
         </h1>
-        {/* <p className="pb-6 tracking-widest capitalize font-light text-2xl">
-          Lorem ipsum
-        </p> */}
         <Link href="#contact">
           <button className="rounded-full px-6 py-3">Get in touch</button>
         </Link>

@@ -62,7 +62,6 @@ export default function Home() {
           ]}
           description="My personal portfolio is built using Next.js/React.js and Tailwind CSS, creating a visually appealing and responsive website. I incorporated the interactive Typewriter Effect library and integrated SendGrid Mail API to allow visitors to submit the contact form."
           // caseStudyLink="/case-study/portfolio-website"
-          // demoLink="https://"
           codeLink="https://github.com/rdpfeifle/portfolio_nextjs"
           imageSrc="/assets/images/portfolio-mockup.png"
           imageAlt="Portfolio Mockup Image"
@@ -81,8 +80,6 @@ export default function Home() {
           ]}
           description="Alloy Fashion, powered by Shopify, offers a complete e-commerce solution with a user-friendly product page, convenient cart functionality, and a newsletter feature. Additionally, it has an easy navigation and secure payment processing."
           caseStudyLink="/case-study/alloy-ecommerce"
-          // demoLink="https://"
-          // codeLink="https://github.com/rdpfeifle/portfolio_nextjs"
           imageSrc="/assets/images/alloyStore-mockup.png"
           imageAlt="Alloy Store Mockup Image"
         />
