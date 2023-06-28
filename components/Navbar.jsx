@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-export const Navbar = () => {
+export const Navbar = ({ showWorkWithMe }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function handleMenuClick() {
@@ -88,11 +88,13 @@ export const Navbar = () => {
                 Portfolio
               </Link>
             </li>
-            <li className={liStyles}>
-              <Link href="/#workWithMe" onClick={handleMenuClick}>
-                Work With Me
-              </Link>
-            </li>
+            {showWorkWithMe && (
+              <li className={liStyles}>
+                <Link href="/#workWithMe" onClick={handleMenuClick}>
+                  Work With Me
+                </Link>
+              </li>
+            )}
             <li className={liStyles}>
               <Link href="/#contact" onClick={handleMenuClick}>
                 Contact
