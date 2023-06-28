@@ -64,7 +64,7 @@ export const ProjectCard = ({
           )}
         </div>
       </div>
-      <div className="md:w-1/2 pb-12 max-md:pt-8">
+      <div className="md:w-1/2 max-md:py-8">
         {caseStudyLink ? (
           <Link href={caseStudyLink}>
             <Image
