@@ -84,7 +84,7 @@ export default function Home() {
           imageAlt="Alloy Store Mockup Image"
         />
       </section>
-      <WorkWithMe />
+      {/* <WorkWithMe /> */}
       <Contact />
     </>
   );
