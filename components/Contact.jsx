@@ -74,8 +74,8 @@ export const Contact = () => {
     setSubmissionStatus(null);
   }
   return (
-    <section id="contact" className="max-md:py-6">
-      <div className="container flex flex-wrap">
+    <section id="contact">
+      <div className="container pt-0 flex flex-wrap">
         <div className="w-full md:w-1/2 md:pr-12">
           <h2 className="pb-10 underlineEffect">Get in touch</h2>
           <p className="mb-4">
