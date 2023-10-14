@@ -98,7 +98,7 @@ export default function Home() {
           ]}
           description="BerryCart is an app designed to simplify and personalize your grocery shopping experience!
           Say goodbye to traditional shopping lists and hello to smart, adaptive shopping with BerryCart."
-          imageSrc="/assets/images/berrycart.png"
+          imageSrc="/assets/images/berrycart-mockup.png"
           imageAlt="Berry Cart Image"
           codeLink="https://github.com/the-collab-lab/tcl-63-smart-shopping-list"
           liveLink="https://tcl-63-smart-shopping-list.web.app/"
