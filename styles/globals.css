@@ -63,6 +63,10 @@
   }
 }
 
+.active-link {
+  @apply text-indigo-500 underline decoration-4 underline-offset-8;
+}
+
 .icon,
 .menu-icon-color {
   filter: invert(23%) sepia(78%) saturate(4225%) hue-rotate(241deg)

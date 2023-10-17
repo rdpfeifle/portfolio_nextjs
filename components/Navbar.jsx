@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 export const Navbar = ({ showWorkWithMe }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const router = useRouter();
 
   function handleMenuClick() {
     setIsMenuOpen(!isMenuOpen);
@@ -73,30 +76,50 @@ export const Navbar = ({ showWorkWithMe }) => {
           }`}
         >
           <ul className="h-screen md:h-auto items-center justify-center md:flex">
-            <li className={liStyles}>
-              <Link href="/#about" onClick={handleMenuClick}>
+            <li
+              className={`${liStyles} ${
+                router.asPath === "/#about" ? "active-link" : ""
+              }`}
+            >
+              <Link href="#about" onClick={handleMenuClick}>
                 About
               </Link>
             </li>
-            <li className={liStyles}>
-              <Link href="/#skills" onClick={handleMenuClick}>
+            <li
+              className={`${liStyles} ${
+                router.asPath === "/#skills" ? "active-link" : ""
+              }`}
+            >
+              <Link href="#skills" onClick={handleMenuClick}>
                 Skills
               </Link>
             </li>
-            <li className={liStyles}>
-              <Link href="/#portfolio" onClick={handleMenuClick}>
+            <li
+              className={`${liStyles} ${
+                router.asPath === "/#portfolio" ? "active-link" : ""
+              }`}
+            >
+              <Link href="#portfolio" onClick={handleMenuClick}>
                 Portfolio
               </Link>
             </li>
             {showWorkWithMe && (
-              <li className={liStyles}>
-                <Link href="/#workWithMe" onClick={handleMenuClick}>
+              <li
+                className={`${liStyles} ${
+                  router.asPath === "/#workWithMe" ? "active-link" : ""
+                }`}
+              >
+                <Link href="#workWithMe" onClick={handleMenuClick}>
                   Work With Me
                 </Link>
               </li>
             )}
-            <li className={liStyles}>
-              <Link href="/#contact" onClick={handleMenuClick}>
+            <li
+              className={`${liStyles} ${
+                router.asPath === "/#contact" ? "active-link" : ""
+              }`}
+            >
+              <Link href="#contact" onClick={handleMenuClick}>
                 Contact
               </Link>
             </li>
