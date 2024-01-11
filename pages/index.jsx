@@ -109,6 +109,7 @@ export default function Home() {
           description="Urban Grace is an e-commerce store developed with HTML, CSS, and Vanilla JavaScript."
           imageSrc="/assets/images/urbanGrace-store-mockup.png"
           imageAlt="Urban Grace store mockup image"
+          codeLink="https://github.com/rdpfeifle/ecomm-store-js"
           liveLink="https://vanilla-js-store-f62b9a.netlify.app/"
         />
       </section>
